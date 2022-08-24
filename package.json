@@ -1,0 +1,64 @@
+{
+  "name": "start-template-webpack",
+  "version": "1.0.0",
+  "description": "Project start template (Webpack)",
+  "private": true,
+  "author": "RomanStashuk <romanstashuk1@gmail.com> (https://github.com/RomanStashuk)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanStashuk/start-template-webpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RomanStashuk/start-template-webpack/issues"
+  },
+  "homepage": "https://github.com/RomanStashuk/start-template-webpack#readme",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "server": "node server.js",
+    "stylelint": "stylelint \"./src/sass/**/*.scss\" --custom-syntax postcss-scss",
+    "stylelint-fix": "npm run stylelint --fix",
+    "eslint": "eslint \"./src/**/*.js\"",
+    "eslint-fix": "npm run eslint --fix",
+    "prettify": "prettier --write \"src/**/*.js\"",
+    "test": "npm run eslint && npm run stylelint"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "postcss-loader": "^7.0.1",
+    "postcss-preset-env": "^7.8.0",
+    "postcss-scss": "^4.0.4",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.5",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.10.0",
+    "stylelint-config-standard": "^27.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-scss": "^4.3.0",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "lodash": "^4.17.21",
+    "normalize.css": "^8.0.1"
+  }
+}
