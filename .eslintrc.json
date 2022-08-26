@@ -1,7 +1,17 @@
 {
-  "ignorePatterns": ["dist", "node_modules", "webpack.*", "config/paths.js"],
-  "extends": ["eslint:recommended", "prettier"],
-  "plugins": ["prettier"],
+  "ignorePatterns": [
+    "dist",
+    "node_modules",
+    "webpack.*",
+    "config/paths.js"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
   "env": {
     "browser": true,
     "es6": true,
@@ -20,11 +30,33 @@
     }
   },
   "rules": {
-    "indent": ["error", 2, { "SwitchCase": 1 }],
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"],
-    "space-before-function-paren": ["error", "never"],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "newer",
+        "asyncArrow": "always"
+      }
+    ],
     "no-unused-vars": "warn"
   }
 }
