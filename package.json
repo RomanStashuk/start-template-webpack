@@ -16,7 +16,6 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
-    "server": "node server.js",
     "stylelint": "stylelint \"./src/sass/**/*.scss\" --custom-syntax postcss-scss",
     "stylelint-fix": "npm run stylelint --fix",
     "eslint": "eslint \"./src/**/*.js\"",
@@ -58,7 +57,6 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
     "normalize.css": "^8.0.1"
   }
 }
