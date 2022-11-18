@@ -21,7 +21,8 @@
     "eslint": "eslint \"./src/**/*.js\"",
     "eslint-fix": "npm run eslint --fix",
     "prettify": "prettier --write \"src/**/*.js\"",
-    "test": "npm run eslint && npm run stylelint"
+    "test": "npm run eslint && npm run stylelint",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.10",
@@ -38,6 +39,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-webpack": "^0.13.2",
     "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss-loader": "^7.0.1",

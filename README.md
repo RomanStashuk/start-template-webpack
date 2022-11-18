@@ -10,4 +10,5 @@
 `npm start` – збирання проекту в режимі розробки із запуском локального сервера<br><br>
 `npm run build` – фінальне збирання проекту в каталог `dist`<br><br>
 `npm test` – запуск перевірки наявності стилістичних помилок (ESLint + Stylelint)<br><br>
-`npm prettify` – форматування JS файлів у каталозі `src` за доп. Prettier
+`npm prettify` – форматування JS файлів у каталозі `src` за доп. Prettier<br><br>
+`npm deploy` - збирання і публікація проекту на GitHub Pages
